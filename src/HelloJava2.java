@@ -1,10 +1,10 @@
-import java.util.Scanner;
-
 public class HelloJava2 {
 
     public static void main(String[] args) {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.print("Enter something\n> ");
-        System.out.println(keyboard.nextLine());
+        try {
+            System.out.println(String.format("%s %s", args[0], args[1]));
+        } catch (Exception e) {
+            System.out.println("Exception thrown  :" + e);
+        }
     }
 }
